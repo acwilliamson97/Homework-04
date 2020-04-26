@@ -1,7 +1,8 @@
 var question = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-text"));
-var questionCounterText = document.getElementById("questionCounter");
+var progressText = document.getElementById("progressText");
 var scoreText = document.getElementById("score");
+var progressBarFull = document.getElementById("progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -49,10 +50,12 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("mostRecentScore", score);
     return window.location.assign("end.html");
   }
   questionCounter++;
-  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
   var questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
