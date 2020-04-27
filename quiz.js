@@ -1,4 +1,9 @@
+var currentQuestionIndex = 0;
+var time = 75;
+var timerId;
+
 var question = document.getElementById("question");
+var timer = document.getElementById("time");
 var choices = Array.from(document.getElementsByClassName("choice-text"));
 var progressText = document.getElementById("progressText");
 var scoreText = document.getElementById("score");
@@ -54,7 +59,10 @@ var MAX_QUESTIONS = 3;
 startGame = () => {
   questionCounter = 0;
   score = 0;
+  time = 75;
   availableQuestions = [...questions];
+  timerId = setInterval(clockTick, 1000);
+  timer.textContent = time;
   getNewQuestion();
   game.classList.remove("hidden");
   loader.classList.add("hidden");
@@ -105,6 +113,19 @@ choices.forEach(choice => {
     }, 1000);
   });
 });
+
+function quizEnd() {
+  clearInterval(timerId);
+}
+
+function clockTick() {
+  time--;
+  timer.textContent = time;
+
+  if (time <= 0) {
+    quizEnd();
+  }
+}
 
 incrementScore = num => {
   score += num;

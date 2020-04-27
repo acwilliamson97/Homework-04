@@ -11,8 +11,9 @@
   <body>
     <div class="container">
       <div id="loader"></div>
+      <div class="timer">Time: <span id="time">75</span></div>
       <div id="game" class="justify-center flex-column">
-        <div id="hud">
+        <div id="hud">          
           <div id="hud-item">
             <p id="progressText" class="hud-prefix">
               Question
@@ -48,6 +49,7 @@
           <p class="choice-text" data-number="4">Choice 4</p>
         </div>
       </div>
+      <div id="feedback" class="feedback hide"></div>
     </div>
     <script src="quiz.js"></script>
   </body>
