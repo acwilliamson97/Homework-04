@@ -7,6 +7,7 @@
 This short timed quiz application features: 
   - a spinning loader icon
   - a progress bar
+  - a countdown timer
   - JavaScript array functions
   - random trivia questions fetched from Open Trivia DB API
   - incorrect and correct user answers that change red or green
@@ -22,6 +23,13 @@ Progress Bar:
 
 
   ![screenshot_20200428_151309](https://user-images.githubusercontent.com/61606793/80543613-1dec9400-8964-11ea-845a-54b7892f3091.png)
+
+
+Timer: 
+
+  ![screenshot_20200428_151935](https://user-images.githubusercontent.com/61606793/80544180-5476de80-8965-11ea-8728-f9e1c8ebc144.png)
+
+
 
 Incorrect and Correct User Choices:
 
