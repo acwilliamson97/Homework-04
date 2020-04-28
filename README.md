@@ -20,11 +20,15 @@ Progress Bar:
   ![screenshot_20200428_151309](https://user-images.githubusercontent.com/61606793/80543613-1dec9400-8964-11ea-845a-54b7892f3091.png)
 
 Incorrect and Correct User Choices:
+
+
   ![screenshot_20200428_151424](https://user-images.githubusercontent.com/61606793/80543653-3bb9f900-8964-11ea-8bd8-6c7e47926215.png)
 
   ![screenshot_20200428_151643](https://user-images.githubusercontent.com/61606793/80543691-4ffdf600-8964-11ea-9c61-bbe77938d691.png)
 
 High Scores Saved to Local Storage:
+
+
   ![screenshot_20200428_152756](https://user-images.githubusercontent.com/61606793/80543970-e0d4d180-8964-11ea-9f85-288945eb9435.png)
 
 
