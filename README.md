@@ -14,7 +14,7 @@ This short timed quiz application features:
   - high scores saved in Local Storage
   
   
-Loader:
+<h2>Loader:</h2>
 
 
   ![screenshot_20200428_152107](https://user-images.githubusercontent.com/61606793/80543542-f09fe600-8963-11ea-8d8a-1c5a58707dd2.png)
