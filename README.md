@@ -14,9 +14,13 @@ This short timed quiz application features:
   
   
 Loader:
+
+
   ![screenshot_20200428_152107](https://user-images.githubusercontent.com/61606793/80543542-f09fe600-8963-11ea-8d8a-1c5a58707dd2.png)
 
 Progress Bar:
+
+
   ![screenshot_20200428_151309](https://user-images.githubusercontent.com/61606793/80543613-1dec9400-8964-11ea-845a-54b7892f3091.png)
 
 Incorrect and Correct User Choices:
